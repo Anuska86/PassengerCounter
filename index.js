@@ -1,3 +1,8 @@
+let count = 0;
+
 function increment() {
-  console.log("The button was clicked");
+  count = count + 1;
+  document.getElementById("count-el").textContent=count;
+
+  console.log(count);
 }
