@@ -35,20 +35,36 @@ body::before {
 /*H,p*/
 
 h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #c2c1c1;
+  margin: 10px 0;
+  font-size: 48px;
+  color: #fff8e1;
+  text-shadow: 0 0 2px #fff3c0, 0 0 6px #ffcc80, 0 0 12px #ffb74d;
+  letter-spacing: 1px;
+  animation: amberFade 2.5s ease-out forwards;
 }
 
 h2 {
-  font-size: 50px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #c2c1c1;
+  font-size: 36px;
+  margin: 0 0 20px;
+  color: #ffe0b2;
+  text-shadow: 0 0 2px #ffe0b2, 0 0 5px #ffb74d, 0 0 10px #ffa726;
+  animation: amberFade 3s ease-out forwards;
+}
+
+@keyframes amberFade {
+  0% {
+    text-shadow: 0 0 2px #fff3c0, 0 0 6px #ffcc80, 0 0 12px #ffb74d;
+  }
+  100% {
+    text-shadow: 0 0 0px transparent, 0 0 0px transparent, 0 0 0px transparent;
+  }
 }
 
 p {
-  color: #c2c1c1;
+  font-size: 18px;
+  color: #d0d0d0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
 }
 
 /*BUTTON*/
@@ -79,9 +95,9 @@ button:focus {
 }
 
 #increment-btn {
-  background: darkred;
+  background: #2c2891;
 }
 
 #save-btn {
-  background: darkgreen;
+  background: #1c7947;
 }
