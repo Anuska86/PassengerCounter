@@ -5,12 +5,13 @@ let saveEl = document.getElementById("save-el");
 
 function increment() {
   count += 1;
-  countEl.innerText = count;
+  countEl.textContent = count;
 }
 
 function save() {
   entries = count + "-";
-  saveEl.innerText += entries;
+  saveEl.textContent += entries;
 
-  console.log(count);
+  count = 0;
+  countEl.textContent = count;
 }
