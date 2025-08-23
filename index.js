@@ -1,12 +1,16 @@
+let countEl = document.getElementById("count-el");
 let count = 0;
 
-function increment() {
-  count = count + 1;
-  document.getElementById("count-el").textContent = count;
+let saveEl = document.getElementById("save-el");
 
-  console.log(count);
+function increment() {
+  count += 1;
+  countEl.innerText = count;
 }
 
 function save() {
+  entries = count + "-";
+  saveEl.innerText += entries;
+
   console.log(count);
 }
